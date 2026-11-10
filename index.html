@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Control Interno · Plan de Trabajo 2026</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header><div class="brand"><div class="seal">CI</div><div><b>CONTROL INTERNO</b><small>Plan de Trabajo · Ejercicio 2026</small></div></div><span class="top-note">PLATAFORMA DE INTEGRACIÓN</span></header>
+<main>
+<section class="hero"><div><p class="eyebrow">SEGUIMIENTO INSTITUCIONAL</p><h1>Plan de Trabajo<br><i>2026</i></h1><p>Consulta las acciones asignadas a tu área, registra avances y entrega evidencia documental.</p></div><div class="hero-stat"><b>96</b><span>acciones programadas</span></div></section>
+<section id="access" class="panel access-panel"><div><p class="eyebrow">ACCESO COMPARTIDO</p><h2>Selecciona tu área</h2><p class="muted">Elige el área responsable para consultar sus acciones. No se requiere una cuenta individual.</p></div><div class="access-controls"><label for="area">Área responsable</label><select id="area"><option value="">Selecciona un área...</option></select><button id="enter" class="primary">Continuar</button></div></section>
+<section id="workspace" class="hidden">
+<div class="workspace-head"><div><p class="eyebrow">ÁREA SELECCIONADA</p><h2 id="areaTitle"></h2></div><button id="changeArea" class="secondary">Cambiar área</button></div>
+<div class="notice"><b>Instrucciones</b><p>Registra una respuesta independiente por cada área responsable. Adjunta evidencia verificable en cada acción. Las respuestas de otras áreas no se mostrarán en esta vista.</p></div>
+<div class="toolbar">
+<div><label for="component">Componente</label><select id="component"><option value="">Todos</option></select></div>
+<div><label for="status">Estado</label><select id="status"><option value="">Todos</option><option value="pendiente">Pendiente</option><option value="en_proceso">En proceso</option><option value="cumplido">Cumplido</option><option value="no_aplica">No aplica</option></select></div>
+<div class="search"><label for="search">Buscar</label><input id="search" type="search" placeholder="Acción o palabra clave"></div>
+</div>
+<div class="progress"><div><span>Acciones con registro</span><b id="progressText">0 / 0</b></div><div class="track"><span id="progress"></span></div></div>
+<div id="actions"></div>
+</section>
+<section id="admin" class="hidden">
+<div class="workspace-head"><div><p class="eyebrow">CONTROL INTERNO</p><h2>Tablero de administración</h2></div><button id="adminExit" class="secondary">Cerrar tablero</button></div>
+<div class="admin-grid" id="adminStats"></div>
+<div class="toolbar"><div><label for="adminArea">Área</label><select id="adminArea"><option value="">Todas las áreas</option></select></div><div><label for="adminComponent">Componente</label><select id="adminComponent"><option value="">Todos</option></select></div><div><label for="adminStatus">Estado</label><select id="adminStatus"><option value="">Todos</option><option value="pendiente">Pendiente</option><option value="en_proceso">En proceso</option><option value="cumplido">Cumplido</option><option value="no_aplica">No aplica</option></select></div></div>
+<div id="adminTable" class="table-wrap"></div>
+</section>
+<section class="admin-entry"><button id="adminOpen" class="text-link">Acceso de administración</button><span id="message" role="status"></span></section>
+</main><footer>Propuesta de plataforma · Control Interno 2026</footer>
+<script type="module" src="app.js"></script></body></html>
